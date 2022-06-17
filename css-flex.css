@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+    
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:hsl(0, 0%, 95%);
+    
+}
+header,
+.name {
+    position: sticky;
+    top: 0;
+}
+
+#nav {
+    background-color: var(--background-color);
+    list-style-type: none;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav {
+    float: left;
+    margin: 1em;
+}
+
+.nav a {
+
+    text-decoration: none;
+    text-align: center;
+    padding: var(--padding, 1em);
+    display: block;
+
+
+}
+
+.nav li:hover {
+
+    background-color: rgb(2, 116, 2);
+    padding: 10px;
+
+}
+
+main{
+    width: 100%;  
+    display: block; 
+   
+}
+.flexbox{
+    display: flex;
+    width: 70%;
+    margin: auto;
+   align-items: center;
+    height: 100vh;
+}
+
+.logo{
+    padding-bottom: 2em;
+}
+.car{
+    padding: 2em;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 15px;
+    height: 450px;
+    width:33.33%;
+}
+
+
+.sedans{
+    
+    background-color: hsl(31, 77%, 52%);
+    padding-bottom: 10px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.suvs {
+    background-color:hsl(184, 100%, 22%);
+    padding-bottom: 1opx
+}
+
+.luxury {
+    background-color:hsl(179, 100%, 13%);
+    padding-bottom: 10px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.sedans button{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+
+}
+
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+
+p {
+    color:hsla(0, 0%, 100%, 0.75) ;
+    margin-bottom: 60px;
+    line-height: 1.7em;
+    
+}
+
+h1{
+    color:hsl(0, 0%, 95%);
+    padding-bottom: 2em;
+}
+
+.btn{
+    text-align: center;
+   
+}
+button{
+    padding: 10px;
+    border-radius: 12px;
+    border:none;
+    
+}
+
+@media screen and (max-length:1440px) {
+    .car{
+        font-family:'Big Shoulders Display',
+            cursive;
+
+    }
+   .flexbox{
+    width: 50%;
+    flex-direction: column;
+   }
+}
+
+@media screen and (max-length:400px) {
+    .car {
+        font-family: 'Lexend Deca',
+                sans-serif;
+        width:100%;
+    }
+    .flexbox{
+        width: 100%;
+        display:block;
+        margin:none;
+        padding: none;
+
+    }
+}
