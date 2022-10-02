@@ -12,19 +12,15 @@ body{
     background-color:hsl(0, 0%, 95%);
     
 }
-header,
-.name {
-    position: sticky;
-    top: 0;
-}
+
 
 #nav {
-    background-color: var(--background-color);
     list-style-type: none;
     width: 100vw;
     overflow: hidden;
     margin: 0;
     padding: 0;
+    background-color: aqua;
 
 }
 
@@ -124,6 +120,12 @@ h1{
     text-align: center;
    
 }
+
+.btn button :hover{
+    background-color: transparent;
+    cursor: pointer;
+}
+
 button{
     padding: 10px;
     border-radius: 12px;
@@ -137,23 +139,55 @@ button{
             cursive;
 
     }
-   .flexbox{
-    width: 50%;
-    flex-direction: column;
-   }
+   
 }
 
 @media screen and (max-length:400px) {
+   .flexbox{
+        width: 100%;
+        display: block;
+        margin:none;
+        padding: none;
+    } 
     .car {
         font-family: 'Lexend Deca',
                 sans-serif;
-        width:100%;
+        /* width:100%; */
     }
-    .flexbox{
-        width: 100%;
-        display:block;
-        margin:none;
-        padding: none;
 
+        #nav {
+            text-decoration: none;
+            text-align: center;
+            /* padding: var(--padding, 1em); */
+            display:block;
+    
+    
+        }
+        
+                .nav li a {
+                    float: none;
+                    display: block;
+                    margin: 1em;
+                }
+
+    .sedans{
+        width: 100%;
+        padding: none;
+        margin: none;
     }
+        .suvs {
+            width: 100%;
+            padding: none;
+            margin: none;
+        }
+                .luxury {
+                    width: 100%;
+                    padding: none;
+                    margin: none;
+                }
+    /* main{
+        width: 100%;
+        margin:none;
+        padding:none;
+    } */
 }
